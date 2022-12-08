@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Baskervville', serif;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+ul, ol, li {
+    list-style: none;
+}
+a {
+    color: #222;
+    text-decoration: none;
+}
+/* reset */
+/* root */
+:root {
+    --fb: 'Baskervville', serif;
+    --fn: 'Noto Sans KR', sans-serif;
+    --iv: #fffff0;
+}
+/* root */
+/* header */
+body {
+    /* background: url('Profile.jpg'); */
+    background-size: cover;
+}
+.tit {
+    margin: 480px 0 0 440px;
+}
+.tit .txt {
+    position: absolute;
+    z-index: 1;
+    font-size: 48px;
+    font-family: var(--fb);
+    margin: 20px 0 0 20px;
+}
+#deco {
+    background: transparent;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+header span {
+    font-family: var(--fb);
+    font-size: 140%;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+header div {
+    width: 80px;
+    height: 15px;
+    line-height: 15px;
+    font-family: var(--fn);
+    font-size: 80%;
+    background: #222;
+    color: var(--iv);
+}
