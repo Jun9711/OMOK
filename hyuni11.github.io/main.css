@@ -14,54 +14,138 @@ a {
     color: #222;
     text-decoration: none;
 }
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+input, select {
+    border: none;
+    background: none;
+}
 /* reset */
 /* root */
 :root {
     --fb: 'Baskervville', serif;
     --fn: 'Noto Sans KR', sans-serif;
+
+
+
     --iv: #fffff0;
+    --mg: #25442F;
+    --dg: #222;
+    --lg: #ccc;
 }
 /* root */
 /* header */
-body {
-    /* background: url('Profile.jpg'); */
-    background-size: cover;
-}
-.tit {
-    margin: 480px 0 0 440px;
-}
-.tit .txt {
-    position: absolute;
-    z-index: 1;
-    font-size: 48px;
-    font-family: var(--fb);
-    margin: 20px 0 0 20px;
-}
-#deco {
-    background: transparent;
-}
 header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 80px;
+    height: 40px;
+    padding: 5px 0;
     text-align: center;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--lg);
 }
 header span {
     font-family: var(--fb);
-    font-size: 140%;
+    font-size: 12pt;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
+    color: var(--mg);
 }
 header div {
     width: 80px;
     height: 15px;
     line-height: 15px;
     font-family: var(--fn);
-    font-size: 80%;
-    background: #222;
+    font-size: 6pt;
+    background: var(--mg);
     color: var(--iv);
 }
+/* header */
+/* content */
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+/* <prof> */
+.prof {
+    width: 360px;
+    height: 1030px;
+}
+.prof .click {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    height: 50px;
+    top: 0;
+    z-index: 3;
+    background: var(--mg);
+    border: 1px solid var(--lg);
+    border-radius: 0 10px 10px 0;
+    color: var(--lg);
+    font-size: 18pt;
+    font-family: var(--fn);
+}
+.prof .click span {
+    width: 360px;
+    text-align: center;
+}
+.prof .click a {
+    width: 40px;
+    justify-content: center;
+    color: var(--lg);
+}
+
+.prof .me {
+    position: fixed;
+    width: 360px;
+    height: 100%;
+    background: var(--mg);
+    color: var(--iv);
+}
+.prof .me .pic {
+    width: 260px;
+    height: 320px;
+    margin: 40px auto;
+    border-radius: 50%;
+    background: url('Me.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.prof .me .name {
+    text-align: center;
+    font-size: 28pt;
+    font-weight: 600;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+.prof .me .txt_zone {
+    width: 320px;
+    margin: 0 auto 30px auto;
+    font-family: var(--fn);
+    font-size: 12pt;
+}
+.prof .me .txt_zone .inner_txt {
+    margin-left: 30px;
+}
+/* <prof> */
+/* <prof> <open> */
+/* <prof> <open> */
+
+/* center */
+/* center */
+
+/* <info> */
+.info {
+    width: 320px;
+    height: 100%;
+}
+/* <info> */
+
+/* content */
