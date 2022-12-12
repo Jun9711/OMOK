@@ -21,24 +21,37 @@ button {
 }
 input, select {
     border: none;
-    background: none;
+    outline: none;
+    background: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
+::-webkit-color-swatch-wrapper {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    background: none;
+    box-shadow: none;
+  }
 /* reset */
+
 /* root */
 :root {
     --fb: 'Baskervville', serif;
     --fn: 'Noto Sans KR', sans-serif;
 
-
-
     --iv: #fffff0;
     --mg: #25442F;
-    --dg: #222;
-    --lg: #ccc;
+    --dg: #142419;
+    --lg: #7C8F82;
 }
 /* root */
+
 /* header */
 header {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,14 +79,16 @@ header div {
     color: var(--iv);
 }
 /* header */
+
 /* content */
 .content {
     display: flex;
     justify-content: space-between;
+    margin-top: -1px;
 }
 /* <prof> */
 .prof {
-    width: 360px;
+    width: 320px;
     height: 1030px;
 }
 .prof .click {
@@ -81,7 +96,7 @@ header div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 400px;
+    width: 360px;
     height: 50px;
     top: 0;
     z-index: 3;
@@ -93,7 +108,7 @@ header div {
     font-family: var(--fn);
 }
 .prof .click span {
-    width: 360px;
+    width: 100%;
     text-align: center;
 }
 .prof .click a {
@@ -101,17 +116,16 @@ header div {
     justify-content: center;
     color: var(--lg);
 }
-
 .prof .me {
     position: fixed;
-    width: 360px;
+    width: 320px;
     height: 100%;
     background: var(--mg);
     color: var(--iv);
 }
 .prof .me .pic {
-    width: 260px;
-    height: 320px;
+    width: 240px;
+    height: 300px;
     margin: 40px auto;
     border-radius: 50%;
     background: url('Me.jpg');
@@ -126,8 +140,8 @@ header div {
     margin-bottom: 20px;
 }
 .prof .me .txt_zone {
-    width: 320px;
-    margin: 0 auto 30px auto;
+    width: 280px;
+    margin: 0 auto 20px auto;
     font-family: var(--fn);
     font-size: 12pt;
 }
@@ -139,13 +153,49 @@ header div {
 /* <prof> <open> */
 
 /* center */
+.center {
+    width: 1280px;
+    padding: 80px 0;
+}
+.tit {}
 /* center */
 
 /* <info> */
 .info {
     width: 320px;
     height: 100%;
+    background: var(--lg);
 }
+.info_box {
+    width: 200px;
+    height: 100%;
+    margin: 80px auto 40px auto;
+    background: var(--mg);
+    color: var(--iv);
+}
+.info_box h1 {
+    text-align: center;
+    font-size: 16pt;
+    border-top: 1px solid var(--iv);
+}
+.info_box .info_tit {
+    height: 80px;
+    line-height: 80px;
+}
+.info_box .info_tit h1 {border: none;}
+.info_box .font { padding: 10px;}
+.info_box .font p {font-size: 12pt;}
+.info_box .color {padding: 10px;}
+.info_box .color .color_box {
+    display: flex;
+    margin-top: 10px;
+}
+.info_box .color .color_box .cp {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    border: 1px solid #fff;
+}
+.info_box .color .color_box .cp:last-child {margin-right: 0;}
 /* <info> */
-
 /* content */
